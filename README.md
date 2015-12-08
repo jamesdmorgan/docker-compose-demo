@@ -45,3 +45,6 @@ Here's the output from my docker-compose logs after I curled my application 5 ti
     web_2   | 172.17.1.140 - - [04/Sep/2015 14:11:46] "GET / HTTP/1.1" 200 -
     web_3   | 172.17.1.140 - - [04/Sep/2015 14:11:48] "GET / HTTP/1.1" 200 -
     web_4   | 172.17.1.140 - - [04/Sep/2015 14:14:19] "GET / HTTP/1.1" 200 -
+
+# Loadbalancer configuration
+The load balancer container runs haproxy and balances between linked containers. See the [README](https://github.com/tutumcloud/haproxy) for information on configuration
